@@ -1,3 +1,6 @@
 import sys 
 
-print("dog")
+for _ in range(10):
+    print("dog")
+
+
