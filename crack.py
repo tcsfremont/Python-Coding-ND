@@ -1,4 +1,5 @@
 from sys import argv as arguments
+from analyze import analyze
 
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
 
@@ -18,13 +19,6 @@ to_file = open(to_filename,  'w',  encoding='utf8')
 
 contents = from_file.read()
 
-contents =  [letter if letter.upper() in ALPHABET else '' for letter in contents]
-
-contents = ''.join(contents)
-
-contents = contents.upper()
-
-to_file.write(contents)
 
 to_file.write(contents)
 
