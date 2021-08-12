@@ -1,6 +1,6 @@
 from sys import argv as arguments
 
-ALPHABET 
+ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
 
 if len(arguments) != 3:
 
@@ -18,13 +18,13 @@ to_file = open(to_filename,  'w',  encoding='utf8')
 
 contents = from_file.read()
 
-contents [letter if letter in ALPHABET for letter in content]
+contents =  [letter if letter in ALPHABET else '' for letter in contents]
 
 contents = ''.join(contents)
 
 contents = contents.upper()
 
-to_file.write(cotents)
+to_file.write(contents)
 
 to_file.write(contents)
 
