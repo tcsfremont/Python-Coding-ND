@@ -1,8 +1,6 @@
 from sys import argv as arguments
 
-ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-KEY ='POIUYLKJHGTREWQFDSAZXCMNBV'
+ALPHABET 
 
 if len(arguments) != 3:
 
@@ -20,18 +18,11 @@ to_file = open(to_filename,  'w',  encoding='utf8')
 
 contents = from_file.read()
 
-for index in range(len(contents)):
+contents [letter if letter in ALPHABET for letter in content]
 
-    letter = contents[index]
-    order = ord(letter) - ord('A')
-    
-    if order < 0 or order >= len(KEY):
+contents = ''.join(contents)
 
-        continue
-
-    cipher_letter = KEY[order]
-    contents[index] = cipher_letter
-
+contents = contents.upper()
 
 to_file.write(cotents)
 
